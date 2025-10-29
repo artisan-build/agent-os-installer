@@ -57,7 +57,7 @@ class EnsureComposerScriptsAreDefined
         ],
         'report' => [
             "@php artisan config:clear --ansi || true",
-            "composer rector --dry-run || true",
+            "vendor/bin/rector --dry-run || true",
             "composer stan || true",
             "composer sniff || true",
             "composer test || true"
